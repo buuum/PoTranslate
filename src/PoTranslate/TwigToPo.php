@@ -1,6 +1,6 @@
 <?php
 
-namespace TwigPoTranslate;
+namespace PoTranslate;
 
 
 class TwigToPo
