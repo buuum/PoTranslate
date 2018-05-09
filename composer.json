@@ -1,0 +1,29 @@
+{
+  "name": "buuum/potranslate",
+  "type": "library",
+  "description": "Po Translate",
+  "homepage": "https://github.com/buuum/PoTranslate",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alfons Martinez",
+      "email": "alfonsmartinezparra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PoTranslate\\": "src/PoTranslate"
+    },
+    "files": [
+      "src/PoTranslate/helpers.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.0.0",
+    "sepia/po-parser": "^5.1",
+    "twig/twig": "^2.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
+}
