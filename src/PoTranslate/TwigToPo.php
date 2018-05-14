@@ -12,7 +12,8 @@ class TwigToPo
     {
         $files = $this->rsearch($twig_files_path, '/.*\.twig/');
 
-        $re = '@e\([\"|\']{1}(.*)[\"|\']{1}\)@m';
+        //$re = '@e\([\"|\']{1}(.*)[\"|\']{1}\)@m';
+        $re = '@[^a-zA-Z]\s*e\([\"|\']{1}(.*?)[\"|\']{1}\)@m';
 
         foreach ($files as $file) {
             $txt = file_get_contents($file);
