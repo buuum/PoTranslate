@@ -53,6 +53,8 @@ class TwigToPo
 
         $php = "<?php\n";
         foreach ($this->translates as $translate) {
+            $translate = str_replace("'", "\\'", $translate);
+            $translate = str_replace("\\\'", "\\'", $translate);
             $php .= "_e('$translate');\n";
         }
 
